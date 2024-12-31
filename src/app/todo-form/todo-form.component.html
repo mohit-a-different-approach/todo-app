@@ -1,0 +1,10 @@
+<div class="form-group" [ngStyle]="{'padding-left':'10px'}">
+    <h3>{{ todo ? 'Edit' : 'Add' }} To-Do</h3> 
+    <div class="col-md-6">
+        <input class="form-control" [(ngModel)]="title" placeholder="Title" /> <br />
+    </div>
+    <div class="col-md-6">
+        <textarea class="form-control" [(ngModel)]="description" placeholder="Description"></textarea>
+    </div> <br />
+    <button class="btn btn-primary" (click)="onSave()">{{ todo ? 'Save Changes' : 'Add To-Do' }}</button>
+</div>
